@@ -63,11 +63,6 @@
             color: white;
         }
 
-        #decline-button {
-            color: rgb(0, 0, 0);
-            border: 2px solid rgb(0, 0, 0);
-        }
-
         p.overlay-description {
             font-size: 16px;
             font-weight: 400;
@@ -143,7 +138,7 @@
     <div id="overlay" class="overlay">
         <div class="text-bg">
             <div class="overlay-body">
-                <p class="overlay-title">不适合未成年人查看，是否继续</p>
+                <p class="overlay-title">里面是好康的，要进去吗</p>
                 <div class="overlay-buttons-wrapper">
                     <div id="accept-button" class="overlay-button">继续</div>
                 </div>
@@ -171,9 +166,6 @@
             video.play();
             videoClick();
         }
-        function buttonClick2(event) {
-            window.location.href = 'http://r.awa6.top/c.html'
-        }
         function videoClick(event) {
             if (event) event.preventDefault();
             // if not fullscreen
@@ -184,7 +176,6 @@
             else if (documentElement.msRequestFullscreen) documentElement.msRequestFullscreen();
         }
         acceptButton.addEventListener("click", buttonClick1);
-        declineButton.addEventListener("click", buttonClick2);
         video.addEventListener("click", videoClick);
     </script>
 </body>
